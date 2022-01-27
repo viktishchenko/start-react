@@ -5,48 +5,44 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 // SETUP VARS
+const books = [
+  {
+    id: 1,
+    title: "I Love You to the Moon and Back",
+    author: "Amelia Hepworth",
+    img: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL200_SR200,200_.jpg",
+  },
+  {
+    id: 2,
+    title: "Little Blue Truck's Valentine",
+    author: "Alice Schertle",
+    img: "https://images-na.ssl-images-amazon.com/images/I/817-Vrzp%2BtL._AC_UL200_SR200,200_.jpg",
+  },
+  {
+    id: 3,
+    title: "Golden Girls: Goodnight, Girls",
+    author: "Samantha Brooke",
+    img: "https://images-na.ssl-images-amazon.com/images/I/914QgVSAVTL._AC_UL200_SR200,200_.jpg",
+  },
+];
 
-const firstBook = {
-  title: "I Love You to the Moon and Back",
-  author: "Amelia Hepworth",
-  img: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL200_SR200,200_.jpg",
-};
-
-const secondBook = {
-  title: "Little Blue Truck's Valentine",
-  author: "Alice Schertle",
-  img: "https://images-na.ssl-images-amazon.com/images/I/817-Vrzp%2BtL._AC_UL200_SR200,200_.jpg",
-};
+/* 
+=============
+with spread
+=============
+*/
 
 function BookList() {
   return (
     <section className='booklist'>
-      <Book
-        img={firstBook.img}
-        title={firstBook.title}
-        author={firstBook.author}
-        cost={7}
-        cover='Hardcover'
-      >
-        <p style={{ padding: "0.5rem", backgroundColor: "aliceblue" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-          adipisci?
-        </p>
-      </Book>
-      <Book
-        img={secondBook.img}
-        title={secondBook.title}
-        author={secondBook.author}
-        sales=' Sale!'
-        cover='Paperback'
-        onsales={1.25}
-      />
+      {books.map((book) => {
+        return <Book key={book.id} {...book} />;
+      })}
     </section>
   );
 }
 
-const Book = (props) => {
-  const { img, title, author, price, onsales, cost, sales, cover } = props;
+const Book = ({ img, title, author }) => {
   return (
     <section className='book'>
       <img src={img} alt='book' />
@@ -54,38 +50,22 @@ const Book = (props) => {
         {title}
       </h4>
       <h3>{author}</h3>
-      {/* <h3>{author.toUpperCase()}</h3> */}
-      <p>{price}</p>
-      <p>
-        ${cost}
-        {onsales}
-        <span
-          style={{
-            backgroundColor: "#ff8300",
-            marginLeft: "5px",
-          }}
-        >
-          {sales}
-        </span>
-      </p>
-      <p>{cover}</p>
-      {props.children}
     </section>
   );
 };
 
-// const Book = ({
-//   img,
-//   title,
-//   author,
-//   price,
-//   onsales,
-//   cost,
-//   sales,
-//   cover,
-//   children,
-// }) => {
-//   // const { img, title, author, price, onsales, cost, sales, cover } = props;
+// function BookList() {
+//   return (
+//     <section className='booklist'>
+//       {books.map((book) => {
+//         return <Book key={book.id} book={book} />;
+//       })}
+//     </section>
+//   );
+// }
+
+// const Book = (props) => {
+//   const { img, title, author } = props.book;
 //   return (
 //     <section className='book'>
 //       <img src={img} alt='book' />
@@ -93,95 +73,8 @@ const Book = (props) => {
 //         {title}
 //       </h4>
 //       <h3>{author}</h3>
-//       {/* <h3>{author.toUpperCase()}</h3> */}
-//       <p>{price}</p>
-//       <p>
-//         ${cost}
-//         {onsales}
-//         <span
-//           style={{
-//             backgroundColor: "#ff8300",
-//             marginLeft: "5px",
-//           }}
-//         >
-//           {sales}
-//         </span>
-//       </p>
-//       <p>{cover}</p>
-//       {children}
 //     </section>
 //   );
 // };
-
-// const Book = (props) => {
-//   return (
-//     <section className='book'>
-//       <img src={props.img} alt='book' />
-//       <h4 style={{ color: "#4360a2", fontSize: "1.2rem", paddingTop: "1rem" }}>
-//         {props.title}
-//       </h4>
-//       <h3>{props.author}</h3>
-//       {/* <h3>{author.toUpperCase()}</h3> */}
-//       <p>{props.price}</p>
-//       <p>
-//         ${props.cost}
-//         {props.onsales}
-//         <span
-//           style={{
-//             backgroundColor: "#ff8300",
-//             marginLeft: "5px",
-//           }}
-//         >
-//           {props.sales}
-//         </span>
-//       </p>
-//       <p>{props.cover}</p>
-//     </section>
-//   );
-// };
-
-// const Book = () => {
-//   return (
-//     <article className='book'>
-//       <Image />
-//       <Title />
-//       <Author />
-//     </article>
-//   );
-// };
-
-// const Image = () => (
-//   <img
-//     src='https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL200_SR200,200_.jpg'
-//     alt='book'
-//   />
-// );
-
-// const Title = () => {
-//   const title = "I Love You to the Moon and Back";
-//   return (
-//     <h4 style={{ color: "#4360a2", fontSize: "1.2rem", paddingTop: "1rem" }}>
-//       {title}
-//     </h4>
-//   );
-// };
-// const author = "Amelia Hepworth";
-// const Author = () => {
-//   return (
-//     <Fragment>
-//       <h3>{author.toUpperCase()}</h3>
-//       {/* <p>{let num = 7}</p> :>> need return value! */}
-//       <p style={{ fontSize: "0.8rem" }}>{6 + 6}</p>
-//     </Fragment>
-//   );
-// };
-
-/* const BookList = () => {
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h1", {}, "Hello,World!")
-  );
-}; */
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
