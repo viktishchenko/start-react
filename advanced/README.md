@@ -6,6 +6,6 @@
         cd advanced
         npm start
 
-### 27.01.2022 2017
+### 27.01.2022 20:17
 
 ![Screenshot 2022-01-27 at 20-16-00 React App](./public/Screenshot-1.png)
