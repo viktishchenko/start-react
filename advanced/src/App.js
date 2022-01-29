@@ -11,7 +11,9 @@ import React from "react";
 
 // import Setup from "./tutorial/2-useEffect/projects/1-useEffect-basics"; :>> 1-st
 // import Setup from "./tutorial/2-useEffect/projects/2-useEffect-cleanup"; :>> 2-nd
-import Setup from "./tutorial/2-useEffect/projects/3-useEffect-fetch-data";
+// import Setup from "./tutorial/2-useEffect/projects/3-useEffect-fetch-data"; :>> 3-rd
+
+import Setup from "./tutorial/3-conditional-rendering/projects/1-multiple-returns";
 
 function App() {
   return (
