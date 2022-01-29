@@ -1,5 +1,12 @@
 /**
- * imrc → rafce
+ * start with use
+ * component must be uppercase
+ * invoke inside function/component body
+ * don't call hooks conditionally (
+ * see down below and useEffect 1-st task
+ * )
+ *
+ * imrs → rafce
  */
 
 import React, { useState } from "react";

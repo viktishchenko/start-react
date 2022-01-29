@@ -1,5 +1,5 @@
 /**
- * imrc → rafce
+ * imrs → rafce
  */
 
 import React from "react"; // we can use {useState} here instead of React.useState([]) down below
