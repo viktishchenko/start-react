@@ -9,7 +9,8 @@ import React from "react";
 // import Setup from "./tutorial/1-useState/projects/4-useState-object"; // :>> 4-th tutor
 // import Setup from "./tutorial/1-useState/projects/5-useState-counter"; :>> 5-th tutor
 
-import Setup from "./tutorial/2-useEffect/projects/1-useEffect-basics";
+// import Setup from "./tutorial/2-useEffect/projects/1-useEffect-basics"; :>> 1-st
+import Setup from "./tutorial/2-useEffect/projects/2-useEffect-cleanup";
 
 function App() {
   return (
