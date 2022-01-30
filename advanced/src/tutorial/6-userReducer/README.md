@@ -1,5 +1,5 @@
-# useEffect tutorial
+# useReducer tutorial
 
-### 29.01.2022 09:15 tutor-1
+### 31.01.2022 05:49 tutor-1
 
-![Screenshot 2022-01-29 at 09-12-52 New Messages (4)](../../assets/useEffect/Screenshot-1.png)
+![Screenshot 2022-01-31 at 05-47-10 React App](../../assets/useReducer/Screenshot-1.png)

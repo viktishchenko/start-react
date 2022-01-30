@@ -20,7 +20,9 @@ import React from "react";
 // import Setup from "./tutorial/4-forms/projects/1-controlled-inputs"; // 1-st tutor
 // import Setup from "./tutorial/4-forms/projects/2-multiple-inputs"; // :>> 2-nd
 
-import Setup from "./tutorial/5-useRef/projects/1-useRef-basics";
+// import Setup from "./tutorial/5-useRef/projects/1-useRef-basics"; // 1-st
+
+import Setup from "./tutorial/6-userReducer/projects";
 
 function App() {
   return (
