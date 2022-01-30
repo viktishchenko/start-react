@@ -15,7 +15,9 @@ import React from "react";
 
 // import Setup from "./tutorial/3-conditional-rendering/projects/1-multiple-returns"; // :>> 1-st
 // import Setup from "./tutorial/3-conditional-rendering/projects/2-short-circuit"; // :>> 2-nd
-import Setup from "./tutorial/3-conditional-rendering/projects/3-show-hide";
+// import Setup from "./tutorial/3-conditional-rendering/projects/3-show-hide"; // 3-rd
+
+import Setup from "./tutorial/4-forms/projects/1-controlled-inputs";
 
 function App() {
   return (
