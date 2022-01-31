@@ -4,12 +4,17 @@
 import React, { useState, useReducer } from "react";
 import Modal from "./Modal";
 import { data } from "../../../data";
+import { reducer } from "./reducer";
 // reducer function
 
+const defaultState = {
+  people: [],
+  isModalOpen: false,
+  modalContent: "",
+};
 const Index = () => {
   const [name, setName] = useState("");
-  const [people, setPeople] = useState(data);
-  const [showModal, setShowModal] = useState(false);
+  const [state, dispatch] = useReducer(reducer, defaultState);
 
   /**
    * nfn
@@ -17,18 +22,22 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      setShowModal(true);
-      setPeople([...people, { id: Date.now().toString(), name }]);
+      const newItem = { id: Date.now().toString(), name };
+      dispatch({ type: "ADD_ITEM", payload: newItem });
       setName("");
     } else {
-      setShowModal(true);
+      dispatch({ type: "NO_VALUE" });
     }
   };
-
+  const closeModal = () => {
+    dispatch({ type: "CLOSE_MODAL" });
+  };
   return (
     <>
       <h2>useReducer tutorial</h2>
-      {showModal && <Modal />}
+      {state.isModalOpen && (
+        <Modal closeModal={closeModal} modalContent={state.modalContent} />
+      )}
       <form className='form' onSubmit={handleSubmit}>
         <div>
           <input
@@ -41,11 +50,16 @@ const Index = () => {
         </div>
         <button type='submit'>add smth</button>
       </form>
-      {people.map((el) => {
+      {state.people.map((el) => {
         // const { id, name } = el;
         return (
-          <div key={el.id}>
+          <div className='item' key={el.id}>
             <h4>{el.name}</h4>
+            <button
+              onClick={() => dispatch({ type: "REMOVE_ITEM", payload: el.id })}
+            >
+              remove item
+            </button>
           </div>
         );
       })}
