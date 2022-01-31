@@ -22,7 +22,9 @@ import React from "react";
 
 // import Setup from "./tutorial/5-useRef/projects/1-useRef-basics"; // 1-st
 
-import Setup from "./tutorial/6-userReducer/projects";
+// import Setup from "./tutorial/6-userReducer/projects"; // 1-st
+
+import Setup from "./tutorial/7-prop-drilling/projects/1-prop-drilling";
 
 function App() {
   return (
