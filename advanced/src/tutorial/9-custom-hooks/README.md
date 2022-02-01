@@ -1,5 +1,5 @@
-# useEffect tutorial
+# custom hooks tutorial
 
-### 29.01.2022 09:15 tutor-1
+### 01.02.2022 19:39 tutor-1
 
-![Screenshot 2022-01-29 at 09-12-52 New Messages (4)](../../assets/useEffect/Screenshot-1.png)
+![Screenshot 2022-02-01 at 19-38-35 React App](../../assets/useFetch/Screenshot-1.png)

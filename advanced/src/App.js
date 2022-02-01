@@ -26,7 +26,10 @@ import React from "react";
 
 // import Setup from "./tutorial/7-prop-drilling/projects/1-prop-drilling"; // 1-st
 
-import Setup from "./tutorial/8-useContext/projects/1-context-api";
+// import Setup from "./tutorial/8-useContext/projects/1-context-api"; // 1-st
+
+// import Setup from "./tutorial/9-custom-hooks/projects/1-fetch-example"; // 1-st
+import Setup from "./tutorial/9-custom-hooks/projects/origin/1-fetch-example";
 
 function App() {
   return (
