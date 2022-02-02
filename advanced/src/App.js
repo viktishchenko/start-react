@@ -31,7 +31,9 @@ import React from "react";
 // import Setup from "./tutorial/9-custom-hooks/projects/1-fetch-example"; // 1-st
 // import Setup from "./tutorial/9-custom-hooks/projects/origin/1-fetch-example"; // 1-st origin
 
-import Setup from "./tutorial/10-prop-types/projects/";
+// import Setup from "./tutorial/10-prop-types/projects/"; // 1-st
+
+import Setup from "./tutorial/11-react-router/projects";
 
 function App() {
   return (
