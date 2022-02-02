@@ -33,7 +33,9 @@ import React from "react";
 
 // import Setup from "./tutorial/10-prop-types/projects/"; // 1-st
 
-import Setup from "./tutorial/11-react-router/projects";
+// import Setup from "./tutorial/11-react-router/projects"; // 1-st
+
+import Setup from "./tutorial/12-memo-useMemo-useCallback/projects";
 
 function App() {
   return (

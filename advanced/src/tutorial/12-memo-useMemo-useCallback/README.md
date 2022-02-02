@@ -1,5 +1,5 @@
-# useEffect tutorial
+# memo, useMemo, useCallback tutorial
 
-### 29.01.2022 09:15 tutor-1
+### 02.02.2022 19:54 tutor-1
 
-![Screenshot 2022-01-29 at 09-12-52 New Messages (4)](../../assets/useEffect/Screenshot-1.png)
+![Screenshot 2022-02-02 at 19-53-32 React App](../../assets/memo/Screenshot-1.png)
