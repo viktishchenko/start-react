@@ -29,7 +29,9 @@ import React from "react";
 // import Setup from "./tutorial/8-useContext/projects/1-context-api"; // 1-st
 
 // import Setup from "./tutorial/9-custom-hooks/projects/1-fetch-example"; // 1-st
-import Setup from "./tutorial/9-custom-hooks/projects/origin/1-fetch-example";
+// import Setup from "./tutorial/9-custom-hooks/projects/origin/1-fetch-example"; // 1-st origin
+
+import Setup from "./tutorial/10-prop-types/projects/";
 
 function App() {
   return (

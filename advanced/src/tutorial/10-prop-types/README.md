@@ -1,5 +1,5 @@
-# useEffect tutorial
+# prpo types tutorial
 
-### 29.01.2022 09:15 tutor-1
+### 02.02.2022 06:03 tutor-1
 
-![Screenshot 2022-01-29 at 09-12-52 New Messages (4)](../../assets/useEffect/Screenshot-1.png)
+![Screenshot 2022-02-02 at 07-41-11 React App](../../assets/prop-types/Screenshot-2.png)
