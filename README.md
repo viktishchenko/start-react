@@ -1,7 +1,11 @@
-# birthday reminder
+# birthday reminder project
 
 [deploy link →](https://viktishchenko.github.io/start-react/birthrem/)
 
-# tours task
+# tours project
 
 [deploy link →](https://viktishchenko.github.io/start-react/tours/)
+
+# reviews project
+
+[deploy link →](https://viktishchenko.github.io/start-react/reviews/)
