@@ -9,3 +9,7 @@
 # reviews project
 
 [deploy link →](https://viktishchenko.github.io/start-react/reviews/)
+
+# accordion project
+
+[deploy link →](https://viktishchenko.github.io/start-react/accordion/)
