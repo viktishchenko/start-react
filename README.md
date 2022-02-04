@@ -13,3 +13,7 @@
 # accordion project
 
 [deploy link →](https://viktishchenko.github.io/start-react/accordion/)
+
+# menu project
+
+[deploy link →](https://viktishchenko.github.io/start-react/menu/)
