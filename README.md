@@ -1,19 +1,23 @@
 # birthday reminder project
 
-[deploy link →](https://viktishchenko.github.io/start-react/birthrem/)
+[in action →](https://viktishchenko.github.io/start-react/birthrem/)
 
 # tours project
 
-[deploy link →](https://viktishchenko.github.io/start-react/tours/)
+[in action →](https://viktishchenko.github.io/start-react/tours/)
 
 # reviews project
 
-[deploy link →](https://viktishchenko.github.io/start-react/reviews/)
+[in action →](https://viktishchenko.github.io/start-react/reviews/)
 
 # accordion project
 
-[deploy link →](https://viktishchenko.github.io/start-react/accordion/)
+[in action →](https://viktishchenko.github.io/start-react/accordion/)
 
 # menu project
 
-[deploy link →](https://viktishchenko.github.io/start-react/menu/)
+[in action →](https://viktishchenko.github.io/start-react/menu/)
+
+# tabs project
+
+[in action →](https://viktishchenko.github.io/start-react/tabs/)
