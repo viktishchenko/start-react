@@ -21,3 +21,7 @@
 # tabs project
 
 [in action →](https://viktishchenko.github.io/start-react/tabs/)
+
+# slider project
+
+[in action →](https://viktishchenko.github.io/start-react/slider/)
