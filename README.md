@@ -25,3 +25,7 @@
 # slider project
 
 [in action →](https://viktishchenko.github.io/start-react/slider/)
+
+# lorem project
+
+[in action →](https://viktishchenko.github.io/start-react/lorem/)
