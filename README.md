@@ -29,3 +29,7 @@
 # lorem project
 
 [in action →](https://viktishchenko.github.io/start-react/lorem/)
+
+# colors project
+
+[in action →](https://viktishchenko.github.io/start-react/colors/)
