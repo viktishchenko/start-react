@@ -37,3 +37,7 @@
 # grocery project
 
 [in action →](https://viktishchenko.github.io/start-react/grocery/)
+
+# navbar project
+
+[in action →](https://viktishchenko.github.io/start-react/navbar/)
