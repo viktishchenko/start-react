@@ -7,7 +7,10 @@ import Submenu from "./Submenu";
 const App = () => {
   return (
     <>
-      <h2>stripe setup</h2>
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
     </>
   );
 };
