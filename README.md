@@ -41,3 +41,7 @@
 # navbar project
 
 [in action →](https://viktishchenko.github.io/start-react/navbar/)
+
+# sidebar-modal project
+
+[in action →](https://viktishchenko.github.io/start-react/sidebar-modal/)
