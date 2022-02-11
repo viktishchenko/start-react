@@ -4,13 +4,16 @@ import Navbar from "./Navbar";
 import CartContainer from "./CartContainer";
 
 const App = () => {
-  if (false) {
+  const { loading } = useGlobalContext();
+
+  if (loading) {
     return (
       <div className='loading'>
         <h2>loading...</h2>
       </div>
     );
   }
+
   return (
     <main>
       <Navbar />
