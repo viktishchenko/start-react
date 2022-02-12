@@ -49,3 +49,7 @@
 # stripe-smth project
 
 [in action →](https://viktishchenko.github.io/start-react/stripe-smth/)
+
+# cart project
+
+[in action →](https://viktishchenko.github.io/start-react/cart/)
