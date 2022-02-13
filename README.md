@@ -53,3 +53,7 @@
 # cart project
 
 [in action →](https://viktishchenko.github.io/start-react/cart/)
+
+# cocktail project
+
+[in action →](https://viktishchenko.github.io/start-react/cocktail/)
