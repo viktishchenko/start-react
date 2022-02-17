@@ -56,6 +56,10 @@
 
 # cocktail project
 
-[in action gh-pages →](https://viktishchenko.github.io/start-react/cocktail/)
+[in action gh-pages ('/'route issue) →](https://viktishchenko.github.io/start-react/cocktail/)
 
 [in action netlify hosting →](https://viktishchenko-cocktail-app.netlify.app/)
+
+# markdown project
+
+[in action →](https://viktishchenko.github.io/start-react/markdown/)
