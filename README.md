@@ -64,6 +64,10 @@
 
 [in action →](https://viktishchenko.github.io/start-react/markdown/)
 
-# markdown project
+# random person project
 
 [in action →](https://viktishchenko.github.io/start-react/person/)
+
+# pagination project
+
+[in action →](https://viktishchenko.github.io/start-react/pagination/)
