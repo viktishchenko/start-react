@@ -15,12 +15,12 @@ export const useFetch = () => {
     const response = await fetch(url);
     const data = await response.json();
 
+    setData(paginate(data));
     setLoading(false);
-    setData(data);
   };
 
   useEffect(() => {
-    getProducts;
-  }, [loading, data]);
+    getProducts();
+  }, []);
   return { loading, data };
 };
