@@ -71,3 +71,7 @@
 # pagination project
 
 [in action →](https://viktishchenko.github.io/start-react/pagination/)
+
+# stock project
+
+[in action →](https://viktishchenko.github.io/start-react/stock/)
