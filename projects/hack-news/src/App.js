@@ -4,7 +4,13 @@ import Stories from "./Stories";
 import Buttons from "./Buttons";
 
 const App = () => {
-  return <div>hacker news starter</div>;
+  return (
+    <>
+      <SearchForm />
+      <Buttons />
+      <Stories />
+    </>
+  );
 };
 
 export default App;

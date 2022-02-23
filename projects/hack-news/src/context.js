@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 import {
   SET_LOADING,
   SET_STORIES,
@@ -7,19 +7,33 @@ import {
   HANDLE_SEARCH,
 } from "./actions";
 
-import reducer from "reducer";
+import reducer from "./reducer";
 
 const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
 
 /**
  * nf
  */
-const initialState = () => {};
+const initialState = {
+  isLoading: true,
+};
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  return <AppContext.Provider value='hello'>{children}</AppContext.Provider>;
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const fetchStories = async (url) => {
+    dispatch({ type: "SET_LOADING" });
+  };
+
+  useEffect(() => {
+    fetchStories();
+  }, []);
+
+  return (
+    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+  );
 };
 
 /**
