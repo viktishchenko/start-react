@@ -83,3 +83,7 @@
 # movie-db project
 
 [in action →](https://viktishchenko.github.io/start-react/movie/)
+
+# hk news project
+
+[in action →](https://viktishchenko.github.io/start-react/hk-news/)
