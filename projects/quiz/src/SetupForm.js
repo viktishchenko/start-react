@@ -3,7 +3,6 @@ import { useGlobalContext } from "./context";
 
 const SetupForm = () => {
   const { quiz, handleChange, handleSubmit, error } = useGlobalContext();
-  console.log("quiz :>> ", quiz);
   return (
     <main>
       <section className='quiz quiz-small'>
@@ -40,12 +39,12 @@ const SetupForm = () => {
           </div>
           {/* difficalty */}
           <div className='form-control'>
-            <label htmlFor='difficalty'>select difficalty</label>
+            <label htmlFor='difficulty'>select difficulty</label>
             <select
               className='form-input'
-              name='difficalty'
-              id='difficalty'
-              value={quiz.difficalty}
+              name='difficulty'
+              id='difficulty'
+              value={quiz.difficulty}
               onChange={handleChange}
             >
               <option value='easy'>easy</option>
