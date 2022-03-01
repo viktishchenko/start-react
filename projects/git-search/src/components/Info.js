@@ -14,7 +14,7 @@ const UserInfo = () => {
       icon: <GoRepo className='icon' />,
       label: "repos",
       value: public_repos,
-      color: "pinc",
+      color: "pink",
     },
     {
       id: 2,
@@ -41,13 +41,9 @@ const UserInfo = () => {
 
   return (
     <section className='section'>
-      <Wrapper>
+      <Wrapper className='section-center'>
         {items.map((item) => {
-          return (
-            <Item key={item.id} {...item}>
-              item
-            </Item>
-          );
+          return <Item key={item.id} {...item}></Item>;
         })}
       </Wrapper>
     </section>
