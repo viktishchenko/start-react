@@ -44,12 +44,34 @@ const Repos = () => {
     })
     .slice(0, 5);
 
-  console.log("mostPopular :>> ", mostPopular);
+  // console.log("mostPopular :>> ", mostPopular);
 
   /**
    *  first:>> { JavaScript: 45, CSS: 38, HTML: 14 }
    *  sec:>>  { JavaScript: {…}, CSS: {…}, HTML: {…} }
    */
+
+  // stars, forks
+  let { stars, forks } = repos.reduce(
+    (total, item) => {
+      const { stargazers_count, name, forks } = item;
+      total.stars[stargazers_count] = { label: name, value: stargazers_count };
+
+      total.forks[forks] = { label: name, value: forks };
+      return total; // { label: "react-timestamp-app", value: 3 }
+    },
+    {
+      stars: {},
+      forks: {},
+    }
+  );
+
+  // get biggest value
+
+  stars = Object.values(stars).slice(-5).reverse(); // { label: "javascript-basic-projects", value: 206 }
+  forks = Object.values(forks).slice(-5).reverse(); // { label: "javascript-basic-projects", value: 198 }
+  // console.log("stars :>> ", stars);
+  // console.log("forks :>> ", forks);
 
   const chartData = [
     {
@@ -70,10 +92,10 @@ const Repos = () => {
     <section className='section'>
       <Wrapper className='section-center'>
         <Pie3D data={mostUsed} />
-        <div></div>
+        <Column3D data={stars} />
         {/* <ExampleChart data={chartData} /> */}
         <Doughnut2D data={mostPopular} />
-        <div></div>
+        <Bar3D data={forks} />
       </Wrapper>
     </section>
   );
